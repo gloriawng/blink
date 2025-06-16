@@ -3,8 +3,7 @@ This project applies computer vision and machine learning to monitor my cat Sesa
 
 As a university student away from home, I really miss Sesame and want a reliable way to keep tabs on her eating habits without relying on sporadic camera notifications. The vet mentioned that she's a bit chubby too, so I needed an easy way to understand her eating habits.
 
-![Uploading frame_44-cat-bowl-2025-05-16t01-12-33-00-00_00000.jpg…]()
-
+![frame_44-cat-bowl-2025-05-16t01-12-33-00-00_00000](https://github.com/user-attachments/assets/88a74998-df7e-4568-9a77-3e47f647dee1)
 
 ## ✨ Project Highlights
 - Automated Video Retrieval: Connects to Blink cameras via the blinkpy API to pull historical video clips securely.
