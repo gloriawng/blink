@@ -1,5 +1,5 @@
 ## 🐾 Cat Eating Monitor: For Cat Sesame 
-This project applies computer vision and machine learning to monitor my cat Sesame, through video footage captured by our Blink home security camera. The system identifies when she's present and analyzes her feeding behavior over time.
+This project applies computer vision and machine learning to monitor my cat Sesame, through video footage captured by our Blink home security camera. This project identifies when she's present and analyzes her feeding behavior over time.
 
 As a university student away from home, I really miss Sesame and want a reliable way to keep tabs on her eating habits without relying on sporadic camera notifications. The vet mentioned that she's a bit chubby too, so I needed an easy way to understand her eating habits.
 
