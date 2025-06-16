@@ -4,38 +4,24 @@ This project applies computer vision and machine learning to monitor my cat Sesa
 As a university student away from home, I really miss Sesame and want a reliable way to keep tabs on her eating habits without relying on sporadic camera notifications. The vet mentioned that she's a bit chubby too, so I needed an easy way to understand her eating habits.
 
 ## ✨ Project Highlights
-Automated Video Retrieval
-Connects to Blink cameras via the blinkpy API to pull historical video clips securely.
+- Automated Video Retrieval: Connects to Blink cameras via the blinkpy API to pull historical video clips securely.
+- Efficient Sampling & Labeling: Samples raw clips for quick manual review and labeling during the initial training phase.
 
-Efficient Sampling & Labeling
-Samples raw clips for quick manual review and labeling during the initial training phase.
+###### Two-Stage Classification Pipeline
+- Cat Detection: A lightweight model filters out clips with no cat or irrelevant motion (e.g., people, shadows).
+- (Planned) Eating Recognition: A specialized model will detect and classify eating behavior (e.g., duration, frequency) from cat-present clips.
 
-Two-Stage Classification Pipeline
-
-Cat Detection: A lightweight model filters out clips with no cat or irrelevant motion (e.g., people, shadows).
-
-(Planned) Eating Recognition: A specialized model will detect and classify eating behavior (e.g., duration, frequency) from cat-present clips.
-
-Video Processing & Frame Extraction
-Uses OpenCV to extract and manage frames for training and inference.
-
-Transfer Learning with PyTorch
-Fine-tunes pre-trained models like ResNet for accurate classification on a small, custom dataset.
-
-Organized Data Pipeline
-Automatically sorts and stores clips and frame data into meaningful categories.
-
-Credential Management
-Sensitive credentials are stored securely in a local .json file and excluded from version control with .gitignore.
+- Video Processing & Frame Extraction: Uses OpenCV to extract and manage frames for training and inference.
+- Transfer Learning with PyTorch: Fine-tunes pre-trained models like ResNet for accurate classification on a small, custom dataset.
+- Organized Data Pipeline: Automatically sorts and stores clips and frame data into meaningful categories using OpenCV.
+- Credential Management: Sensitive credentials are stored securely in a local .json file and excluded from version control with .gitignore.
 
 ## Tech Stack & Skills Demonstrated
-Language: Python
-Async Programming: asyncio (non-blocking API interactions)
-Hardware Integration: blinkpy API for interfacing with Blink cameras
-Computer Vision: OpenCV for frame extraction and preprocessing
-Deep Learning: PyTorch for training and deploying classification models
-Modeling Techniques: Transfer learning using pre-trained architectures
-Data Handling: NumPy, os, shutil for file and data operations
-Annotation Strategy: Manual image labeling of my cat's activity for supervised learning
-Version Control: Git and GitHub for source tracking and documentation
-MLOps Foundations: Full pipeline coverage—from acquisition to model deployment
+- Language: Python
+- Async Programming: asyncio (non-blocking API interactions)
+- Hardware Integration: blinkpy API for interfacing with Blink cameras
+- Computer Vision: OpenCV for frame extraction and preprocessing
+- Deep Learning: PyTorch for training and deploying classification models
+- Data Handling: NumPy, os, shutil for file and data operations
+- Annotation Strategy: Manual image labeling of my cat's activity for supervised learning
+- Version Control: Git and GitHub for source tracking and documentation
