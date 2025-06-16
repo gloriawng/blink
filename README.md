@@ -1,4 +1,4 @@
-## 🐾 Cat Eating Monitor: End-to-End ML for my cat Sesame 
+## 🐾 Cat Eating Monitor: For Cat Sesame 
 This project applies computer vision and machine learning to monitor my cat Sesame, through video footage captured by our Blink home security camera. The system identifies when she's present and analyzes her feeding behavior over time.
 
 As a university student away from home, I really miss Sesame and want a reliable way to keep tabs on her eating habits without relying on sporadic camera notifications. The vet mentioned that she's a bit chubby too, so I needed an easy way to understand her eating habits.
@@ -6,15 +6,15 @@ As a university student away from home, I really miss Sesame and want a reliable
 ## ✨ Project Highlights
 - Automated Video Retrieval: Connects to Blink cameras via the blinkpy API to pull historical video clips securely.
 - Efficient Sampling & Labeling: Samples raw clips for quick manual review and labeling during the initial training phase.
-
-###### Two-Stage Classification Pipeline
-- Cat Detection: A lightweight model filters out clips with no cat or irrelevant motion (e.g., people, shadows).
-- (Planned) Eating Recognition: A specialized model will detect and classify eating behavior (e.g., duration, frequency) from cat-present clips.
-
 - Video Processing & Frame Extraction: Uses OpenCV to extract and manage frames for training and inference.
 - Transfer Learning with PyTorch: Fine-tunes pre-trained models like ResNet for accurate classification on a small, custom dataset.
 - Organized Data Pipeline: Automatically sorts and stores clips and frame data into meaningful categories using OpenCV.
 - Credential Management: Sensitive credentials are stored securely in a local .json file and excluded from version control with .gitignore.
+
+###### Two-Stage Classification Pipeline
+1. Cat Detection: A lightweight model filters out clips with no cat or irrelevant motion (e.g., people, shadows).
+2. (Planned) Eating Recognition: A specialized model will detect and classify eating behavior (e.g., duration, frequency) from cat-present clips.
+
 
 ## Tech Stack & Skills Demonstrated
 - Language: Python
