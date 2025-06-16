@@ -17,7 +17,7 @@ async def main():
             print("BlinkPy login successful! No errors observed.")
             print(f"You have {len(blink.cameras)} cameras.")
 
-            # Example: Iterate and print camera info
+            # iterating throguh cameras
             # for name, camera in blink.cameras.items():
             #     print(f"Camera is named: {name}")
             #     print(camera.attributes) # Print all attributes for one camera

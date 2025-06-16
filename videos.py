@@ -37,28 +37,25 @@ async def main():
             camera = blink.cameras[list(blink.cameras.keys())[9]] # 44 cat bowl
             print(camera.attributes)
 
-            # --- Define the date range for clips ---
-            # Example: Download clips from the last 90 days
-            # Adjust 'days=90' as needed for your training data
+            # Download clips from the last 90 days
             ninety_days_ago = datetime.now() - timedelta(days=90)
             since_date_str = ninety_days_ago.strftime("%Y/%m/%d %H:%M")
 
             print(f"Starting download of clips for '{camera.name}' since {since_date_str}...")
 
-            # --- Download the videos ---
+            # Download the videos
             await blink.download_videos(
                 path=download_dir,
                 since=since_date_str,
                 camera=camera.name,
-                delay=2, # Recommended: 2-second delay between API calls
-                stop=50 # Increased pages to ensure more clips. Adjust as needed.
-                        # 50 pages * ~25 videos/page = ~1250 videos
+                delay=2, # Recommended 2-second delay between API calls
+                stop=50 # Increased pages to ensure more clips. 50 pages * ~25 videos/page = ~1250 videos
             )
             print(f"Finished downloading clips to '{download_dir}'.")
 
         else:
             print("BlinkPy login failed from saved credentials. Tokens might be expired.")
-            print("Consider running 'setup.py' again to refresh credentials.")
+            print("Running 'setup.py' to refresh credentials.")
 
     finally:
         if session and not session.closed:

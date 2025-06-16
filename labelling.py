@@ -36,13 +36,11 @@ def extract_frames(video_path, output_folder, frames_per_second=1):
     vidcap.release()
     print(f"Extracted {saved_frame_count} frames to {output_folder}")
 
-# Example usage:
-# Assuming your videos are in 'cat_clips'
 video_folder = r"C:\Users\glori_7afg9d\Videos\blink-cat"
 frames_output_folder = "extracted_frames"
 
-for video_file in os.listdir(video_folder):
-    if video_file.endswith((".mp4", ".avi", ".mov")): # Add other video extensions if needed
+for video_file in os.listdir(video_folder): # 5 second clips
+    if video_file.endswith((".mp4")): # all blink videos are .mp4
         video_path = os.path.join(video_folder, video_file)
         extract_frames(video_path, frames_output_folder, frames_per_second=0.5) # Extract 0.5 frames per second (every 2 seconds)
 
