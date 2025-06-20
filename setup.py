@@ -1,3 +1,4 @@
+# One time run to setup blink to extract videos
 import asyncio
 from blinkpy.blinkpy import Blink
 from aiohttp import ClientSession

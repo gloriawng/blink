@@ -1,3 +1,4 @@
+# To take a random sample of frames of the videos
 import os
 import random
 import shutil
@@ -25,6 +26,6 @@ def sample_videos(source_folder, destination_folder, sample_size=200):
 
 
 source_video_folder = r"C:\Users\glori_7afg9d\Videos\blink-cat"
-sample_video_folder = r"C:\Users\glori_7afg9d\Videos\sample-cat" # New folder for your sampled videos
+sample_video_folder = r"C:\Users\glori_7afg9d\Videos\sample-cat" # New folder for sampled videos
 
-sample_videos(source_video_folder, sample_video_folder, sample_size=100) # 100 videos
+sample_videos(source_video_folder, sample_video_folder, sample_size=300) # 300 videos

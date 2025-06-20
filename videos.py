@@ -1,3 +1,4 @@
+# To grab training videos from Blink
 import asyncio
 from blinkpy.blinkpy import Blink
 from blinkpy.auth import Auth
