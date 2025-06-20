@@ -1,6 +1,9 @@
 # json
 blink_config.json 
 
+# all the frames
+labeled-frames/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
